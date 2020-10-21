@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
+import android.widget.Chronometer;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
     TextView now_number;
     RelativeLayout[] btn=new RelativeLayout[25];
     TextView[] btn_text=new TextView[25];
+    TextView successTime;
     RelativeLayout ok_btn;
+    Chronometer chronometer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         next=false;
         match=1;
         now_number.setText(String.valueOf(match));
+        chronometer.start();
     }
 
     boolean next;
@@ -101,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 include[0].setVisibility(View.VISIBLE);
                 include[1].setVisibility(View.GONE);
+                chronometer.setBase(SystemClock.elapsedRealtime());
                 game();
             }
         });
@@ -109,6 +115,8 @@ public class MainActivity extends AppCompatActivity {
     private void setNow_number(){
         Log.i(TAG, "setNow_number()");
         if(match==1){
+            chronometer.stop();
+            successTime.setText(chronometer.getText());
             include[1].setVisibility(View.VISIBLE);
             include[0].setVisibility(View.GONE);
             return;
@@ -123,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
     private void all_view(){
         include[0]=findViewById(R.id.include_game_view);
         include[1]=findViewById(R.id.include_success_view);
+        chronometer=(Chronometer)findViewById(R.id.chronometer);
         now_number=(TextView)findViewById(R.id.now_number);
         btn[0]=(RelativeLayout)findViewById(R.id.btn_1);
         btn[1]=(RelativeLayout)findViewById(R.id.btn_2);
@@ -174,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
         btn_text[22]=(TextView)findViewById(R.id.btn_text_23);
         btn_text[23]=(TextView)findViewById(R.id.btn_text_24);
         btn_text[24]=(TextView)findViewById(R.id.btn_text_25);
+        successTime=(TextView)findViewById(R.id.successTime);
         ok_btn=(RelativeLayout)findViewById(R.id.ok_btn);
     }
 }
