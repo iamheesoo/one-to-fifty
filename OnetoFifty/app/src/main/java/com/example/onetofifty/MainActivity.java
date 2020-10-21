@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
@@ -94,7 +95,18 @@ public class MainActivity extends AppCompatActivity {
                         if(match==25) next=true;
                         setNow_number();
                     }
-
+                    else{ // 틀린 숫자 클릭
+                        int change=getResources().getColor(R.color.colorPrimary);
+                        btn[btnIdx].setBackgroundColor(change); // 틀린 값 색깔 바꾸고
+                        final int origin=getResources().getColor(R.color.colorBG);
+                        Handler handler=new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                btn[btnIdx].setBackgroundColor(origin);
+                            }
+                        }, 200); // 250ms후 원래대로
+                    }
                 }
             });
         }
@@ -114,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setNow_number(){
         Log.i(TAG, "setNow_number()");
-        if(match==1){
+        if(match==50){
             chronometer.stop();
             successTime.setText(chronometer.getText());
             include[1].setVisibility(View.VISIBLE);

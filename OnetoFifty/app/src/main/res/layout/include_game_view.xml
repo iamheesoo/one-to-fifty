@@ -2,142 +2,142 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f3f3f3">
+    android:background="@color/colorPrimary">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:background="#848484">
-
-            <TextView
-                android:id="@+id/now_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:textColor="#f3f3f3"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="50dp" >
 
             <Chronometer
                 android:id="@+id/chronometer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="#0000ff"
-                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBG"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
                 android:textSize="40sp"
                 android:textStyle="bold" />
-        </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/now_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorDark"
+                android:background="@color/colorBG"
+                android:text="100"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.6"
+            android:layout_weight="2"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/btn_1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
-            <!--            <Button-->
-            <!--                android:id="@+id/btn_1"-->
-            <!--                android:layout_width="50dp"-->
-            <!--                android:layout_height="50dp"-->
-            <!--                android:layout_marginTop="3dp"-->
-            <!--                android:background="#000080"-->
-            <!--                android:onClick="btnClick"-->
-            <!--                android:textColor="#f3f3f3"-->
-            <!--                android:textSize="30sp"-->
-            <!--                android:textStyle="bold" />-->
 
             <RelativeLayout
                 android:id="@+id/btn_2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
         </LinearLayout>
@@ -145,86 +145,96 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.6"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/btn_6"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_7"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_8"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_9"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_10"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
         </LinearLayout>
@@ -232,86 +242,96 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.6"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/btn_11"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_12"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_13"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_14"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_15"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
         </LinearLayout>
@@ -319,86 +339,96 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.6"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/btn_16"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_17"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_18"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_19"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_19"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_20"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
         </LinearLayout>
@@ -406,86 +436,96 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.6"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/btn_21"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_22"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_23"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_24"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/btn_25"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:layout_margin="3dp"
-                android:background="#000080">
+                android:background="@color/colorBG">
 
                 <TextView
                     android:id="@+id/btn_text_25"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#f3f3f3"
-                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
